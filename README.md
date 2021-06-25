@@ -17,17 +17,31 @@ This will build the tool, and output the gin.jar file
 
 ### Using the tool
 
-In order to use the compiled tool, you need two things:
+In order to use the compiled tool, you need three things:
 
 Number 1. An application. 
-Simply clone the source code of an application into the Apps Folder. You can then find the part of the app you wish to improve and the test suites you wish to utilise
+Simply make an Apps folder and clone the source code of an application into it. You can then find the part of the app you wish to improve and the test suites you wish to utilise.
+
+Make sure the app can be built and the test will run before attempting to use the tool or it is unlikely to function correctly.
+
+Call 
+```
+./gradlew cAT
+```
+and
+```
+./gradlew check 
+```
+
+to ensure the application can be tested
+
 
 Number 2. A Config File
 
 The current config.properties file shows an example for the wikimedia commons application (https://github.com/commons-app/apps-android-commons)
 
 It is broken down as follows:
-
+```
 appName:name of application package
 
 appPath:Relative path to main directory of the app
@@ -44,13 +58,16 @@ testAppName= name of the test application package
 
 adbPath= path to the adb executable
 
-deviceName= serial number of the device to run on
+deviceName= serial number of the device to run on (use adb devices command)
 
 tests=name of tests (format: TestClass.TestMethod or TestClass.* for all methods)
 
 perfTests= name of tests on which frame rate will be measured (same format as above)
 
 flavour= flavour of the application being improved (may be left blank)
+```
+
+3. An android device, either an emulator or a phone must be running/connected to the machine you run the tool on.
 
 ### Important Files
 
