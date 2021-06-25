@@ -69,6 +69,12 @@ flavour= flavour of the application being improved (may be left blank)
 
 3. An android device, either an emulator or a phone must be running/connected to the machine you run the tool on.
 
+Finally run 
+```
+java -jar gin.jar
+```
+to run the tool.
+
 ### Important Files
 
 AndroidGI.java:
