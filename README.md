@@ -24,7 +24,7 @@ Simply make an Apps folder and clone the source code of an application into it. 
 
 Make sure the app can be built and the test will run before attempting to use the tool or it is unlikely to function correctly.
 
-Call 
+Enter the applications directory and call 
 ```
 ./gradlew cAT
 ```
@@ -42,15 +42,15 @@ The current config.properties file shows an example for the wikimedia commons ap
 
 It is broken down as follows:
 ```
-appName:name of application package
+appName=name of application package
 
-appPath:Relative path to main directory of the app
+appPath=Relative path to main directory of the app
 
 filePath=Relative path to the file being improved
 
-apkPath= path to the apps main apk
+apkPath=Relative path to the apps main apk
 
-testApkPath= path to the applications test apk
+testApkPath=Relative path to the applications test apk
 
 testRunner= name of the test runner
 
@@ -60,7 +60,7 @@ adbPath= path to the adb executable
 
 deviceName= serial number of the device to run on (use adb devices command)
 
-tests=name of tests (format: TestClass.TestMethod or TestClass.* for all methods)
+tests=name of tests (format: TestClass.TestMethod or TestClass.* for all methods separated by a comma (,))
 
 perfTests= name of tests on which frame rate will be measured (same format as above)
 
