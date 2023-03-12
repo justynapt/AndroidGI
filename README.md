@@ -2,7 +2,29 @@
 
 # AndroidGin: A Tool for Experimentation with GI in ANdroid
 
-This is a version of the GIN tool (https://github.com/gintool/gin) reporpoused to run on Android Application
+This is a version of the GIN tool (https://github.com/gintool/gin) reporpoused to run on Android Application. It is aimed to improve responsiveness of Android apps by reducing frame rate.
+
+If using this code for a publication, please cite the associated paper, thank you: <br>
+```
+@inproceedings{Callan2021:improvingAndroid,
+  author    = {James Callan and
+               Justyna Petke},
+  editor    = {Una{-}May O'Reilly and
+               Xavier Devroey},
+  title     = {Improving Android App Responsiveness Through Automated Frame Rate
+               Reduction},
+  booktitle = {Search-Based Software Engineering - 13th International Symposium,
+               {SSBSE} 2021, Bari, Italy, October 11-12, 2021, Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12914},
+  pages     = {136--150},
+  publisher = {Springer},
+  year      = {2021},
+  url       = {https://doi.org/10.1007/978-3-030-88106-1\_10},
+  doi       = {10.1007/978-3-030-88106-1\_10}
+}
+```
+
 ### Installing and Buildin
 
 First clone the repo, then build using gradle:
